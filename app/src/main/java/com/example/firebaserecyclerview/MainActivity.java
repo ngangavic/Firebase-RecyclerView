@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         catalogList = new ArrayList<Catalog>();
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("users").child("IBAipw8FTIPYgjvNDyEiT03HAsu2").child("catalog");
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("users").child("userid").child("catalog");
         recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
         linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
